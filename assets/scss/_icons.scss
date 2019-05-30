@@ -1,0 +1,15 @@
+.icon-place {
+  min-width: 64px;
+  width: 64px;
+  height: 48px;
+
+  &__supermarket {
+    @extend .icon-place;
+    background: url('/assets/img/ic-supermarket.svg') no-repeat;
+
+    &--hover {
+      @extend .icon-place;
+      background: url('/assets/img/ic-supermarket-hover.svg') no-repeat;
+    }
+  }
+}

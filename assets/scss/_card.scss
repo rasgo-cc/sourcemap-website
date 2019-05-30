@@ -1,0 +1,130 @@
+.card {
+  border: 0;
+  // border-left: 3px solid white;
+  border-radius: 8px;
+  width: 100%;
+  // padding: 16px 20px;
+  margin: 8px 0;
+  box-shadow: 0 0 12px 0 rgba(46, 91, 255, 0.07);
+  cursor: pointer;
+  transition: all 0.2s;
+
+  hr {
+    margin: 0;
+  }
+
+  &--supermarket {
+    @extend .card;
+    // border-left-color: $red;
+  }
+
+  &:hover {
+    // border-left: 3px solid $red;
+    transform: translate(1px, -2px);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    &.inverted {
+      background: $red !important;
+      color: white;
+    }
+  }
+
+  &__details {
+    padding: 16px;
+
+    ul {
+      padding-bottom: 8px;
+    }
+
+    ul:last-child {
+      padding-bottom: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 8px;
+    }
+
+    li:last-child {
+      padding: 0;
+    }
+  }
+
+  &__footer {
+    padding: 16px;
+
+    a {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.place {
+  &__name {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  &__category {
+    &--supermarket {
+      color: $red;
+
+      &.inverted {
+        color: white;
+      }
+    }
+  }
+
+  &__icon {
+    min-width: 64px;
+    width: 64px;
+    height: 48px;
+    margin-left: 16px;
+
+    &--supermaket {
+      @extend .place__icon;
+      background: url('/assets/img/ic-supermarket.svg') no-repeat;
+
+      &.inverted {
+        background: url('/assets/img/ic-supermarket-hover.svg') no-repeat;
+      }
+    }
+  }
+}
+
+.place-details {
+  &__icon {
+    display: inline-block;
+    min-width: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-right: 10px;
+    &--address {
+      @extend .place-details__icon;
+      background: url('/assets/img/ic-location.svg') no-repeat;
+    }
+    &--website {
+      @extend .place-details__icon;
+      background: url('/assets/img/ic-website.svg') no-repeat;
+    }
+    &--hours {
+      @extend .place-details__icon;
+      background: url('/assets/img/ic-time.svg') no-repeat;
+    }
+    &--phone {
+      @extend .place-details__icon;
+      background: url('/assets/img/ic-phone.svg') no-repeat;
+    }
+  }
+}

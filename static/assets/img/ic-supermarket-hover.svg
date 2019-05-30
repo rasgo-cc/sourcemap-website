@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="45" viewBox="0 0 64 45">
+    <g fill="none" fill-rule="nonzero" transform="translate(.5)">
+        <rect width="61" height="45" x="1" fill="#FF8EA8" rx="3"/>
+        <path fill="#FFBECD" d="M4 0h47.36L11.786 45H4a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z"/>
+        <rect width="15" height="17" x="4" y="20" fill="#FF8EA8" stroke="#EF3062" stroke-width="2" rx="1"/>
+        <path fill="#FFF" d="M5 21h13L9.69 36H5z"/>
+        <g transform="translate(22 19)">
+            <rect width="9" height="24" fill="#FFF" rx="1"/>
+            <rect width="9" height="24" x="10" fill="#FFF" rx="1"/>
+            <rect width="2" height="5" x="6" y="10" fill="#F53360" rx="1"/>
+            <rect width="2" height="5" x="11" y="10" fill="#F53360" rx="1"/>
+        </g>
+        <rect width="15" height="17" x="44" y="20" fill="#FF8EA8" stroke="#EF3062" stroke-width="2" rx="1"/>
+        <rect width="63" height="3" y="11" fill="#FF8EA8" rx="1.5"/>
+        <path fill="#EF3062" d="M1 14h61v2H1z"/>
+        <path fill="#FFF" d="M45 21h13l-8.31 15H45z"/>
+        <rect width="34" height="5" x="14.5" y="3.5" fill="#FFF" stroke="#FF8EA8" rx="2"/>
+        <rect width="1" height="8" x="51.933" y="22.714" fill="#FF8EA8" rx=".5" transform="rotate(30 52.433 26.714)"/>
+        <rect width="1" height="8" x="48.933" y="24.714" fill="#FF8EA8" rx=".5" transform="rotate(30 49.433 28.714)"/>
+    </g>
+</svg>

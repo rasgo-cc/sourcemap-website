@@ -1,0 +1,26 @@
+.side {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 24px 0 24px;
+  background: $side-background-color;
+  width: $side-width;
+  min-width: $side-width;
+  overflow: hidden;
+
+  .results {
+    padding-right: 5px;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &__summary {
+      font-size: 1.1rem;
+      padding-bottom: 8px;
+    }
+  }
+
+  .footer {
+    background: chartreuse;
+    height: 40px;
+  }
+}

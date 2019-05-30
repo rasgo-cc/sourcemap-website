@@ -1,0 +1,100 @@
+//
+// Colors
+//
+$text-color: #555d74;
+$link-color: #615cbf;
+$primary-color: #50459d;
+$primary-color-light: #8079b1;
+$side-background-color: #f3f6fb;
+$yellow: #ffba2b;
+$green: #0d9f9b;
+$red: #f53360;
+$blue: #2a9fc7;
+
+//
+// Dimensions
+//
+$nav-height: 48px;
+$side-width: 480px;
+
+//
+// Structure
+//
+
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+html,
+body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  background: lightblue;
+  color: $text-color;
+  font-size: 13px;
+  height: 100%;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s;
+  color: $primary-color;
+
+  &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
+}
+
+button {
+  background: $primary-color;
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $link-color;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  align-content: center;
+  background: $primary-color;
+  color: white;
+  height: $nav-height;
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - #{$nav-height});
+  overflow: hidden;
+}
+
+.map-wrapper {
+  background: white;
+  width: 100%;
+}
