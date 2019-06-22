@@ -6,6 +6,7 @@ import NuxtConfiguration from '@nuxt/config'
 const config: NuxtConfiguration = {
   mode: 'universal',
   env: {
+    API_URL: process.env.API_URL,
     MAP_TILE_SERVER: process.env.MAPBOX_TILE_SERVER
   },
   /*
