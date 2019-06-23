@@ -1,6 +1,14 @@
 const pkg = require('./package')
 const process = require('process')
-require('dotenv').config()
+
+const env = process.env
+if (process.argv.indexOf('--production') > -1) {
+  env.NODE_ENV = 'production'
+} else {
+  env.NODE_ENV = env.NODE_ENV ? env.NODE_ENV : 'development'
+}
+
+require('dotenv-flow').config()
 import NuxtConfiguration from '@nuxt/config'
 
 const config: NuxtConfiguration = {

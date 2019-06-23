@@ -62,7 +62,7 @@ export default class Home extends Vue {
 
   async fetchPlaces(lat, lng) {
     const results = await this.$axios.$get(
-      `${process.env.API_URL}/api/places/search?lat=${lat}&lng=${lng}`
+      `${process.env.API_URL}/places/search?lat=${lat}&lng=${lng}`
     )
     this.results = results.data
   }
