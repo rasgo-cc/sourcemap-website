@@ -22,9 +22,10 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 ## Environment Variables
 
 ```
+COMPOSE_PROJECT_NAME=greenmap
 MAPBOX_TILE_SERVER=<url>
 OSM_TILE_SERVER=<url>
-API_URL=<url>
+API_URL=http://localhost:8080/api
 ```
 
 ## Development
