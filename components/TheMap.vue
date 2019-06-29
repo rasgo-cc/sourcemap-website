@@ -57,6 +57,7 @@ export default class TheMap extends Vue {
   centerMoved = false
 
   showSearchHere = false
+  centerZoom = 15
 
   $refs: any = {
     map: Object
@@ -69,13 +70,12 @@ export default class TheMap extends Vue {
   }
 
   onSearchHere() {
-    this.$emit('searchOn', this.center)
+    this.$emit('searchHere', this.center)
     this.showSearchHere = false
   }
 
   setCenter(latitude, longitude) {
-    console.log('setCenter', latitude, longitude)
-    this.$refs.map.mapObject.flyTo([latitude, longitude], 15)
+    this.$refs.map.mapObject.flyTo([latitude, longitude], this.centerZoom)
   }
 
   markerIconAnchor(marker: MarkerData) {

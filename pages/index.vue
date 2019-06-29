@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="map-wrapper">
-        <the-map ref="map" :markers="markers" @update:center="onUpdateCenter" />
+        <the-map ref="map" :markers="markers" @searchHere="onSearchHere" />
       </div>
     </div>
   </div>
@@ -56,7 +56,8 @@ export default class Home extends Vue {
     map: TheMap
   }
 
-  onUpdateCenter(data) {
+  onSearchHere(data) {
+    console.log('onSearchHere')
     this.fetchPlaces(data.lat, data.lng)
   }
 
